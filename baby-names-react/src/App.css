@@ -1,0 +1,165 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: flex-start;
+  background-color: rgb(247, 237, 224);
+}
+
+.removeBtn {
+  background-color: brown;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 999px;
+  border: 1px solid white;
+
+  position: absolute;
+  right: -10px;
+  top: -7px;
+}
+.genderFilter {
+  display: flex;
+  justify-content: center;
+}
+
+.f {
+  background-color: rgb(235, 152, 235);
+}
+
+.m {
+  background-color: rgb(102, 196, 233);
+}
+li {
+  list-style: none;
+  margin: 5px;
+  height: min-content;
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(102, 196, 233);
+  color: white;
+  margin-top: 4rem;
+  padding: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.NameList {
+  margin: 30px 40px 10px 10px;
+}
+
+input[type="text"] {
+  width: 30%; 
+  margin: 0 auto; 
+  display: block; 
+  padding: 10px; 
+  border-radius: 15px; 
+  transition: width 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 40%;
+}
+
+.genderFilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.genderFilter label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+  border: 2px solid rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.genderFilter label:hover {
+  border: 2px solid rgb(12, 96, 192);
+}
+
+.genderFilter input {
+  display: none;
+}
+
+.genderFilter .all {
+  background-color: #ffffff;
+}
+
+.genderFilter .boy {
+  background-color: #ffffff;
+}
+
+.genderFilter .girl {
+  background-color: #ffffff;
+}
+
+.genderFilter input[type="radio"]:checked + label::before {
+  background-color: #000;
+}
+
+.genderFilter label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.genderFilter input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    width: 90%;
+    background-color: rgb(224, 247, 237);
+  }
+
+ 
+  h1 {
+    margin-top: 2rem; 
+    padding: 20px; /
+  }
+
+  .genderFilter label {
+    width: 40px; 
+    height: 40px; 
+    font-size: 0.8em; 
+  }
+
+ 
+}
