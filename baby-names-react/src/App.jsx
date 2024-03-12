@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import BabyNames from "./BabyNames";
 import Favorites from "./Favorites";
 import GenderFilter from "./GenderFilter";
-import "./GenderFilter.jsx";
 import "./App.css";
 
 function App() {
@@ -22,8 +21,10 @@ function App() {
   return (
     <div className="App">
       <h1>Baby Names App</h1>
-      <BabyNames onAddFavorite={addFavorite} />
-      
+ <BabyNames onAddFavorite={addFavorite} />
+     
+     
+     
     </div>
   );
 }

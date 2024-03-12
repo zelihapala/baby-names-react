@@ -1,17 +1,11 @@
 import React from 'react';
+import FavoritesList from './FavoritesList';
 
 function Favorites({ favorites, removeFavorite }) {
   return (
     <div>
-     
-      <ul>
-        {favorites.map((favorite) => (
-          <li key={favorite.id}>
-            {favorite.name}
-            <button onClick={() => removeFavorite(favorite)}>Remove</button>
-          </li>
-        ))}
-      </ul>
+      <h3>Favorites:</h3>
+      <FavoritesList favorites={favorites} onRemoveFavorite={removeFavorite} />
     </div>
   );
 }
