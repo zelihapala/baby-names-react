@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import babyNamesData from "./babyNamesData.json";
 import GenderFilter from "./GenderFilter";
 import FavoritesList from "./FavoritesList";
+import Favorites from "./Favorites";
 
 function BabyNames({ onAddFavorite }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -47,8 +48,8 @@ function BabyNames({ onAddFavorite }) {
         selectedGender={selectedGender}
         onSelectGender={setSelectedGender}
       />
-          <h3>Favorites:</h3>
-      <FavoritesList
+          
+      <Favorites
         favorites={favorites}
         onRemoveFavorite={removeFromFavorites}
       />
