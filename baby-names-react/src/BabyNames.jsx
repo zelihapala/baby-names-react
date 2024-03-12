@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import babyNamesData from "./babyNamesData.json";
 import GenderFilter from "./GenderFilter";
-import FavoritesList from "./FavoritesList";
 import Favorites from "./Favorites";
 
 function BabyNames({ onAddFavorite }) {
